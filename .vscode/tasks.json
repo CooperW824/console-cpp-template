@@ -12,15 +12,24 @@
             "presentation": {
                 "reveal": "always"
             },
-            "group": "build"
+            "group": "build",
+						"dependsOn": ["clean"]
         },
-         {
-            "label": "run",
-            "command": "./build/app.bin",
-            "type": "shell",
-            "args": [],
-            "group": "none",
-            "dependsOn":["build"]
-         }
+				{
+					"label": "run",
+					"command": "./build/app.bin",
+					"type": "shell",
+					"args": [],
+					"group": "none",
+					"dependsOn":["build"]
+				},
+				{
+				"label": "clean",
+				"command": "rm -rf build && mkdir build",
+				"type": "shell",
+				"args": [],
+				"group": "none",
+				"dependsOn":["build"]
+				},
     ]
 }

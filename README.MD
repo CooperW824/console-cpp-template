@@ -38,3 +38,24 @@ Build the demo program by running
 and then you can run the demo program by running:
 
 		./build/app.bin
+
+
+## Adding additional source files
+
+To add additional source files to the makefile:
+
+1. Add a new task to the make file for the new source file by adding the below code to the end of the file, replacing `filename` with the name of the source file without the file extension.
+
+```makefile
+filename.o: 
+	g++ -g -c -o build/filename.o filename.cpp 
+```
+
+2. Update the dependencies for the project build step
+
+Add your new file dependency to the first two lines of the make file as shown below. Replacing `filename` with the name of the source file without the file extension.:
+
+```makefile
+build: main.o filename.o
+	g++ -g -o build/app.bin build/main.o build/filename.o
+```

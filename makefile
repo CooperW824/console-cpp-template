@@ -1,4 +1,4 @@
-build: clean main.o
+build: main.o 
 	g++ -g -o build/app.bin build/main.o
 
 clean:
