@@ -1,4 +1,5 @@
 #include <iostream>
+#include "test.h"
 
 int main()
 {
@@ -11,5 +12,6 @@ int main()
 		twoItemsAgo = temp;
 		std::cout << "Fibonacci number " << i + 1 << " : " << previous << std::endl;
 	}
+	std::cout << "Recursive Factorial of 6: " << factorial(6) << std::endl;
 	return 0;
 }

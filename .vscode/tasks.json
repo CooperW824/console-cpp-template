@@ -29,7 +29,6 @@
 				"type": "shell",
 				"args": [],
 				"group": "none",
-				"dependsOn":["build"]
 				},
     ]
 }

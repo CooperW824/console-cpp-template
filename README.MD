@@ -1,6 +1,6 @@
 # C++ Project Template
 
-A basic template for developing simple console based C++ programs in VSCode, this is mostly for my upcomming Data Structures class.
+A basic template for developing simple console based C++ programs in VSCode, this is mostly for my upcoming Data Structures class.
 
 It contains:
 
@@ -42,16 +42,16 @@ and then you can run the demo program by running:
 
 ## Adding additional source files
 
-To add additional source files to the makefile:
+1. Create a new source file (.cpp file) for function implementations and a new header file (.h file) for function definitions in the `src` folder.
 
-1. Add a new task to the make file for the new source file by adding the below code to the end of the file, replacing `filename` with the name of the source file without the file extension.
+2. Add a new task to the make file for the new source file by adding the below code to the end of the file, replacing `filename` with the name of the source file without the file extension.
 
 ```makefile
 filename.o: 
-	g++ -g -c -o build/filename.o filename.cpp 
+	g++ -g -c -o build/filename.o src/filename.cpp 
 ```
 
-2. Update the dependencies for the project build step
+3. Update the dependencies for the project build step
 
 Add your new file dependency to the first two lines of the make file as shown below. Replacing `filename` with the name of the source file without the file extension.:
 
