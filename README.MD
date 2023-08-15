@@ -13,15 +13,15 @@ It contains:
 
 Make sure you have G++, GDB, and Make installed on a linux machine or in WSL. You can install these by running
 
-    sudo apt install build-essentials
+    sudo apt install build-essential
     sudo apt install gdb
     sudo apt install make
 
 To use this in other projects, clone this repository and open this folder in VSCode by running.
 
 		cd into/project/directory
-		git clone https://github.com/CooperW824/cpp-template.git
-		code .
+		git clone https://github.com/CooperW824/cpp-template.git .
+		code 
 
 then select `Open Folder` in VSCode and open your project folder.
 
