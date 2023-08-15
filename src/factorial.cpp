@@ -1,5 +1,5 @@
 #include <iostream>
-#include "test.h"
+#include "factorial.h"
 
 long long factorial(uint8_t length)
 {

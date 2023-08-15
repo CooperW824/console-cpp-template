@@ -1,5 +1,5 @@
-build: main.o test.o
-	g++ -g -o build/app.bin build/main.o build/test.o
+build: main.o factorial.o
+	g++ -g -o build/app.bin build/main.o build/factorial.o
 
 clean:
 	rm -rf build
@@ -8,5 +8,5 @@ clean:
 main.o:
 	g++ -g -c -o build/main.o src/main.cpp 
 
-test.o:
-	g++ -g -c -o build/test.o src/test.cpp
+factorial.o:
+	g++ -g -c -o build/factorial.o src/factorial.cpp
