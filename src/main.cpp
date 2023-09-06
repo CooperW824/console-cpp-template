@@ -14,14 +14,11 @@ int main()
 		std::cout << "Fibonacci number " << i + 1 << ": " << previous << std::endl;
 	}
 	std::cout << "Recursive Factorial of 6: " << factorial(6) << std::endl;
-	
+
 	MyClass test(10);
 
 	double result = test.pow(2);
 	std::cout << result << std::endl;
-	
+
 	return 0;
-
-
-	
 }
