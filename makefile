@@ -1,5 +1,5 @@
 build: main.o factorial.o MyClass.o
-	g++ -g -o build/app.bin build/main.o build/factorial.o build/MyClass.o
+	g++ -g -o build/app.bin build/*.o
 
 clean:
 	rm -rf build
