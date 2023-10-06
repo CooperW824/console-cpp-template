@@ -33,7 +33,7 @@ If you want to add a remote repository for holding onto your code:
 
 Build the demo program by running
 
-		make
+		make -j
 
 and then you can run the demo program by running:
 
@@ -47,7 +47,7 @@ and then you can run the demo program by running:
 2. Add a new task to the make file for the new source file by adding the below code to the end of the file, replacing `filename` with the name of the source file without the file extension.
 
 ```makefile
-filename.o: 
+filename.o: src/filename.cpp
 	g++ -g -c -o build/filename.o src/filename.cpp 
 ```
 
