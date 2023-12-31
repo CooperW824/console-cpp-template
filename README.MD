@@ -47,7 +47,7 @@ and then you can run the demo program by running:
 2. Add a new task to the make file for the new source file by adding the below code to the end of the file, replacing `filename` with the name of the source file without the file extension.
 
 ```makefile
-filename.o: src/filename.cpp
+build/filename.o: src/filename.cpp
 	g++ -g -c -o build/filename.o src/filename.cpp 
 ```
 
@@ -56,6 +56,6 @@ filename.o: src/filename.cpp
 Add your new file dependency to the first two lines of the make file as shown below. Replacing `filename` with the name of the source file without the file extension.:
 
 ```makefile
-build: main.o filename.o
-	g++ -g -o build/app.bin build/main.o build/filename.o
+build: build/main.o build/filename.o
+	g++ -g -o build/app.bin build/*.o
 ```
